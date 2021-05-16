@@ -1,0 +1,11 @@
+version: "2.0"
+
+services: 
+    go-ethereum1:
+        image: ethereum/client-go:stable
+        container_name: "go-ethereum1"
+        restart: always
+        ports: 
+            - 30303:30303
+        volumes: 
+            - /Users/feilong/data/service/ethereum-node/docker-compose/go-ethereum1/data:/root/.ethereum
